@@ -225,7 +225,7 @@ for wait and turnaround for the low priority. We speculate the reason why
 round robin does as well as priority in this case is because the high priority
 processes kept both CPU and I/O saturated in both round robin and priority
 regardless. When they finished, the low priority process was the only one left
-- and because it was the last, it's wait was the sum of half of all the high
+\- and because it was the last, it's wait was the sum of half of all the high
 priority process's bursts. Because both CPU and I/O were saturated in either
 case, the only thing that mattered would be whichever process finished last must
 have the greater of the sum of the bursts of the CPU \/ IO processes infront
