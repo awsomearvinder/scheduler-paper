@@ -2,7 +2,7 @@
 #align(center)[
 	= Scheduler Report
 
-	Arvinder Dhanoa |  Steven Sommers
+	Arvinder Dhanoa |  Steven Sommer
 ]
 
 #pagebreak()
@@ -205,7 +205,7 @@ in terms of cpu utilization, where round-robin performed at a 97%, FCFS got
 Priority isn't included since in this case it performs exactly the same as FCFS
 (since all the processes have the same priority).
 
-It's worth noting as far as the priority case - We'd expect that generally
+It's worth noting as far as the priority goes - We'd expect that generally
 high priority processes wouldn't take much CPU / IO time. Things like OS
 services which want to run *regularly*, but not nessecarily a lot of load in
 of themselves. Assuming this holds true, we can see a huge benefit to using
@@ -220,8 +220,8 @@ didn't graph the execution due to how large the graph would be, but overall we
 thought this matched our expectations for how it would play out - low priority
 processes that wanted a large chunk of resources did relatively fine.
 
-Oddly enough, when doing the same test with Round Robin, we get the same score
-for wait and turnaround for the low priority. We speculate the reason why
+Oddly enough, when doing the same test with Round Robin, we get the same scores
+for wait and turnaround for the processes overall. We speculate the reason why
 round robin does as well as priority in this case is because the high priority
 processes kept both CPU and I/O saturated in both round robin and priority
 regardless. When they finished, the low priority process was the only one left
